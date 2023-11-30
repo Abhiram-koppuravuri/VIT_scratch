@@ -20,17 +20,7 @@ def pred_and_plot_image(
     transform: torchvision.transforms = None,
     device: torch.device = device,
 ):
-    """Predicts on a target image with a target model.
-
-    Args:
-        model (torch.nn.Module): A trained (or untrained) PyTorch model to predict on an image.
-        class_names (List[str]): A list of target classes to map predictions to.
-        image_path (str): Filepath to target image to predict on.
-        image_size (Tuple[int, int], optional): Size to transform target image to. Defaults to (224, 224).
-        transform (torchvision.transforms, optional): Transform to perform on image. Defaults to None which uses ImageNet normalization.
-        device (torch.device, optional): Target device to perform prediction on. Defaults to device.
-    """
-
+    
     # Open image
     img = Image.open(image_path)
 
